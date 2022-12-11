@@ -1,8 +1,6 @@
-/ControleBonificacao.class
-/Designer.class
-/EditorVideo.class
-/Funcionario.class
-/Gerente.class
-/TesteFuncionario.class
-/TesteGerente.class
-/TesteReferencias.class
+/SistemaInterno.class
+/TesteSistema.class
+/Administrador.class
+/FuncionarioAutenticavel.class
+/Cliente.class
+/Autenticavel.class

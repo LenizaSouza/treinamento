@@ -1,13 +1,31 @@
-
-public class Funcionario {
+// não pode instanciar, criar objeto dessa classe pq é abstrata(não pode dar new).
+public abstract class Funcionario {
+	
+private int senha;
+	
+	public void setSenha(int senha) {
+		this.senha=senha;
+	}	
+	
+	public boolean autentica(int senha) {
+		if(this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	
+	
+	
 	
 	private String nome;
 	private String cpf;
 	private double salario;
 	
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	// metodo sem corpo, não há implementação aqui(não tem implementação).
+	public abstract double getBonificacao();		
+	
 	public String getNome() {
 		return nome;
 	}
