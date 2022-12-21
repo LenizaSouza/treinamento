@@ -1,3 +1,4 @@
+package br.com.souzabankI.banco.modelo;
 
 public class ContaPoupanca extends Conta {
 	

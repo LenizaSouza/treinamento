@@ -1,3 +1,8 @@
+package br.com.souzabankI.banco.test;
+
+import br.com.souzabankI.banco.modelo.CalculadorDeImposto;
+import br.com.souzabankI.banco.modelo.ContaCorrente;
+import br.com.souzabankI.banco.modelo.SeguroDeVida;
 
 public class TesteTributaveis {
 

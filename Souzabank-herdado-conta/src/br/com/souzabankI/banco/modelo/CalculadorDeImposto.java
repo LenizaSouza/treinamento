@@ -1,4 +1,6 @@
+package br.com.souzabankI.banco.modelo;
 
+//br.com.souzabankI.banco.modelo.CalculadorDeImposto => FQN
 public class CalculadorDeImposto {
 	
 private double totalImposto;

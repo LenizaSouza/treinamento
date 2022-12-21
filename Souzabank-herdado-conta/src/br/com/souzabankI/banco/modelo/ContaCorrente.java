@@ -1,3 +1,4 @@
+package br.com.souzabankI.banco.modelo;
 //new ContaCorrente
 public class ContaCorrente extends Conta implements Tributavel {
 

@@ -1,8 +1,13 @@
+package br.com.souzabankI.banco.test;
+
+import br.com.souzabankI.banco.modelo.ContaCorrente;
+import br.com.souzabankI.banco.modelo.ContaPoupanca;
+import br.com.souzabankI.banco.modelo.SaldoInsuficienteException;
 
 public class TesteContas {
 	
 	public static void main(String[] args)  throws SaldoInsuficienteException{
-		
+		//Full Qualified Name FQN
 		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100.0);
 		
