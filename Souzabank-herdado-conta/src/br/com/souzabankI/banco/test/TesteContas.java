@@ -8,6 +8,7 @@ public class TesteContas {
 	
 	public static void main(String[] args)  throws SaldoInsuficienteException{
 		//Full Qualified Name FQN
+		
 		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100.0);
 		

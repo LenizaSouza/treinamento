@@ -1,4 +1,10 @@
 package br.com.souzabankI.banco.modelo;
+/**
+ * Classe que representa um cliente no SouzaBanking.
+ * 
+ * @author bouso
+ *
+ */
 
 public class Cliente {
 
