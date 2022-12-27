@@ -5,7 +5,7 @@ import br.com.souzabankI.banco.modelo.Conta;
 import br.com.souzabankI.banco.modelo.ContaCorrente;
 import br.com.souzabankI.banco.modelo.ContaPoupanca;
 
-public class Teste {
+public class TesteObject {
 
 	public static void main(String[] args) {
 
