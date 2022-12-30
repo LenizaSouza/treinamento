@@ -16,7 +16,7 @@ public class TesteObject {
 		
 		ContaCorrente cc = new ContaCorrente(22, 33);
 		Object cp = new ContaPoupanca(33, 22);
-		Object cliente = new Cliente();
+		//Object cliente = new Cliente();
 		
 		System.out.println(cc);
 		System.out.println(cp);

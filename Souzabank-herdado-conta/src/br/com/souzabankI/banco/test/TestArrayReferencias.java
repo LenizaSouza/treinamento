@@ -1,22 +1,32 @@
 package br.com.souzabankI.banco.test;
 
+import br.com.souzabankI.banco.modelo.Cliente;
+import br.com.souzabankI.banco.modelo.Conta;
 import br.com.souzabankI.banco.modelo.ContaCorrente;
+import br.com.souzabankI.banco.modelo.ContaPoupanca;
 
 public class TestArrayReferencias {
 	
 	public static void main(String[] args) {
 		
 		//int[] idades = new int[5];
-		ContaCorrente[] contas = new ContaCorrente[5];		
-		ContaCorrente cc1 = new ContaCorrente (22, 11);		
-		contas[0] = cc1;
+		Object[] referencias = new Object[5];
 		
-		ContaCorrente cc2 = new ContaCorrente (22, 22);
-		contas[1] = cc2;
+		
+		ContaCorrente cc1 = new ContaCorrente (22, 11);		
+		referencias[0] = cc1;
+		
+		ContaPoupanca cc2 = new ContaPoupanca (22, 22);
+		referencias[1] = cc2;
+		
+		Cliente cliente = new Cliente();
+		referencias[2] = cliente;
 		
 		//System.out.println(cc2.getNumero());
-		System.out.println(contas[1].getNumero());
-		ContaCorrente ref = contas[1];
+		//Object refrenciaGenerica = contas [1];		
+		//System.out.println(refrenciaGenerica.getNumero());
+		
+		ContaPoupanca ref = (ContaPoupanca) referencias[1]; // type cast
 		System.out.println(cc2.getNumero());
 		System.out.println(ref.getNumero());
 	}
