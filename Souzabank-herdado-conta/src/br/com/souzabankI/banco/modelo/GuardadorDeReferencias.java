@@ -2,7 +2,7 @@ package br.com.souzabankI.banco.modelo;
 
 public class GuardadorDeReferencias {
 	
-	private Conta[] referencias;
+	private Object[] referencias;
 	private int posicaoLivre;
 	
 	public GuardadorDeReferencias() {
@@ -11,7 +11,7 @@ public class GuardadorDeReferencias {
 	}
 	
 	public void adiciona(Object ref) {
-		this.referencias[this.posicaoLivre] = ref;
+		this.referencias[this.posicaoLivre] = (Conta) ref;
 		this.posicaoLivre++;
 		
 	}

@@ -1,10 +1,12 @@
-package br.com.souzabankI.banco.modelo;
+
+package br.com.souzabankI.banco.test;
 
 import br.com.souzabankI.banco.modelo.Conta;
+import br.com.souzabankI.banco.modelo.ContaCorrente;
 import br.com.souzabankI.banco.modelo.GuardadorDeContas;
 import br.com.souzabankI.banco.modelo.Conta;
 
-public class Teste {
+public class TesteGuardadorContas {
 
 	public static void main(String[] args) {
 
