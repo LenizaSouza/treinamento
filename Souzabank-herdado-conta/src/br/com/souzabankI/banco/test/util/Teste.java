@@ -2,6 +2,7 @@ package br.com.souzabankI.banco.test.util;
 
 import java.util.ArrayList;
 
+import br.com.souzabankI.banco.modelo.Cliente;
 import br.com.souzabankI.banco.modelo.Conta;
 import br.com.souzabankI.banco.modelo.ContaCorrente;
 
@@ -9,9 +10,11 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		ArrayList lista = new ArrayList();		
+		//Generics
+		ArrayList<Conta> lista = new ArrayList<Conta>();
+		ArrayList<String> nomes = new ArrayList<String>();
 		
-		Conta cc = new ContaCorrente(22, 11);		
+		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
 		
 		Conta cc2 = new ContaCorrente(22, 22);
@@ -19,7 +22,7 @@ public class Teste {
 		
 		System.out.println("Tamanho: " + lista.size());
 		
-		Conta ref = (Conta)lista.get(0);
+		Conta ref = lista.get(0);
 		
 		System.out.println(ref.getNumero());
 		
@@ -35,12 +38,12 @@ public class Teste {
 		
 		for(int i = 0; i < lista.size(); i++) {
 			Object oRef = lista.get(i);
-			System.out.println(lista.get(i));
+			System.out.println(oRef);
 		}
 		System.out.println("----------");
 		
-		for(Object oRef : lista) {
-			System.out.println(oRef);
+		for(Conta conta : lista) {
+			System.out.println(conta);
 		}
 
 	}
