@@ -6,7 +6,7 @@ import br.com.souzabankI.banco.modelo.Cliente;
 import br.com.souzabankI.banco.modelo.Conta;
 import br.com.souzabankI.banco.modelo.ContaCorrente;
 
-public class Teste {
+public class TesteArrayListEquals {
 
 	public static void main(String[] args) {
 		
