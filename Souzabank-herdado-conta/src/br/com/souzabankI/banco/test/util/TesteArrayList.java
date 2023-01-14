@@ -1,6 +1,8 @@
 package br.com.souzabankI.banco.test.util;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 import br.com.souzabankI.banco.modelo.Cliente;
 import br.com.souzabankI.banco.modelo.Conta;
@@ -11,9 +13,8 @@ public class TesteArrayList {
 	public static void main(String[] args) {
 		
 		//Generics
-		ArrayList<Conta> lista = new ArrayList<Conta>();
-		ArrayList<String> nomes = new ArrayList<String>();
-		
+		List<Conta> lista = new ArrayList<Conta>();
+				
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
 		
