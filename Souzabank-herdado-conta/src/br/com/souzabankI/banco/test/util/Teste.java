@@ -49,14 +49,16 @@ public class Teste {
 		}
 		
 		//NumeroDaContaComparator comparator = new NumeroDaContaComparator();	
-		lista.sort(new TitularDaContaComparator());
+		lista.sort(null);
 		
-		Collections. sort(lista, new NumeroDaContaComparator());
+		//Collections.sort(lista, new NumeroDaContaComparator());
+		//Collections.sort(lista);
+		//Collections.reverse(lista);
 		
 		System.out.println("--------");
 		
 		for (Conta conta : lista) {
-			System.out.println(conta + ", " +conta.getTitular().getNome() );			
+			System.out.println(conta + ", " + conta.getTitular().getNome() );			
 		}		
 	}	
 }
