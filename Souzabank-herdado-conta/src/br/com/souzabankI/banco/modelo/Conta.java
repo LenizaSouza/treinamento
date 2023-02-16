@@ -62,8 +62,8 @@ public abstract class Conta extends Object implements Comparable<Conta> {
 	}
 
 	public void setNumero(int numero) {
-		if (agencia <= 0) {
-			System.out.println("Não pode numero de conta menor igual a 0");
+		if (numero <= 0) {
+			System.out.println("Não pode valor menor igual a 0");
 			return;
 		}
 		this.numero = numero;
@@ -75,7 +75,7 @@ public abstract class Conta extends Object implements Comparable<Conta> {
 
 	public void setAgencia(int agencia) {
 		if (agencia <= 0) {
-			System.out.println("Não pode numero de agência menor igual a 0");
+			System.out.println("Não pode valor menor igual a 0");
 			return;
 		}
 		this.agencia = agencia;
