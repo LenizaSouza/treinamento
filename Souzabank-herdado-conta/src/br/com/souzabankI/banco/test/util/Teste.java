@@ -44,22 +44,22 @@ public class Teste {
 		lista.add(cc3);
 		lista.add(cc4);
 		
-		for (Conta conta : lista) {
-			System.out.println(conta);
-		}
-		
-		//NumeroDaContaComparator comparator = new NumeroDaContaComparator();
-		lista.sort(null);
-		
-		//Collections.sort(lista, new NumeroDaContaComparator());
-		//Collections.sort(lista);
-		//Collections.reverse(lista);
-		
-		System.out.println("---------");
+		NumeroDaContaComparator2 comparator = new NumeroDaContaComparator2();
+		lista.sort(comparator);
 		
 		for (Conta conta : lista) {
 			System.out.println(conta + ", " + conta.getTitular().getNome());
 		}
+	}
+}
+
+class NumeroDaContaComparator2 implements Comparator<Conta> {
+
+	@Override
+	public int compare(Conta c1, Conta c2) {
+		return Integer.compare(c1.getNumero(), c2.getNumero());
+		
+
 	}
 }
 
@@ -73,20 +73,3 @@ class TitularDaContaComparator2 implements Comparator<Conta> {
 	}
 }
 
-class NumeroDaContaComparator2 implements Comparator<Conta> {
-
-	@Override
-	public int compare(Conta c1, Conta c2) {
-		return Integer.compare(c1.getNumero(), c2.getNumero());
-		
-//		return c1.getNumero() - c2.getNumero();
-		
-//		if(c1.getNumero() < c2.getNumero()) {
-//			return -1;
-//		}
-//		if(c1.getNumero() > c2.getNumero()) {
-//			return 1;
-//		}
-//		return 0;
-	}
-}
