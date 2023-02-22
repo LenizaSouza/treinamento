@@ -44,8 +44,14 @@ public class Teste {
 		lista.add(cc3);
 		lista.add(cc4);
 		
-		NumeroDaContaComparator2 comparator = new NumeroDaContaComparator2();
-		lista.sort(comparator);
+		lista.sort(new Comparator<Conta>() {
+
+				@Override
+				public int compare(Conta c1, Conta c2) {
+					return Integer.compare(c1.getNumero(), c2.getNumero());
+				}
+			}				
+		);
 		
 		for (Conta conta : lista) {
 			System.out.println(conta + ", " + conta.getTitular().getNome());
