@@ -10,7 +10,7 @@ import br.com.souzabankI.banco.modelo.Conta;
 import br.com.souzabankI.banco.modelo.ContaCorrente;
 import br.com.souzabankI.banco.modelo.ContaPoupanca;
 
-public class Teste {
+public class TesteAnonima {
 
 	public static void main(String[] args) {
 		
@@ -44,9 +44,13 @@ public class Teste {
 		lista.add(cc3);
 		lista.add(cc4);
 		
-		lista.sort((Conta c1, Conta c2) -> {
+		lista.sort(new Comparator<Conta>() { //classe anonima
+
+				@Override
+				public int compare(Conta c1, Conta c2) {
 					return Integer.compare(c1.getNumero(), c2.getNumero());
-				}				
+				}
+			}				
 		);
 		
 		Comparator<Conta> comp = new Comparator<Conta>() {
