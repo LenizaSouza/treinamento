@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
 import br.com.souzabankI.banco.modelo.Cliente;
 import br.com.souzabankI.banco.modelo.Conta;
@@ -44,9 +45,7 @@ public class Teste {
 		lista.add(cc3);
 		lista.add(cc4);
 		
-		lista.sort(
-				(Conta c1, Conta c2) -> Integer.compare(c1.getNumero(), c2.getNumero())								
-		);
+		lista.sort((c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));
 		
 		Comparator<Conta> comp = (Conta c1, Conta c2) -> {
 				String nomeC1 = c1.getTitular().getNome();
@@ -54,8 +53,8 @@ public class Teste {
 				return nomeC1.compareTo(nomeC2);			
 		};
 		
-		for (Conta conta : lista) {
-			System.out.println(conta + ", " + conta.getTitular().getNome());
-		}
+		lista.sort(comp);
+		
+		lista.forEach((conta) -> System.out.println(conta + ", " + conta.getTitular().getNome()));
 	}
 }
