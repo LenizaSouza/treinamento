@@ -1,0 +1,18 @@
+{
+    "theme_color": "#35b7f6",
+    "background_color": "#433f3a",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/",
+    "name": "EAD Progressive Web Apps",
+    "short_name": "EAD PWA",
+    "description": "Progressive Web Apps EAD Proway",
+    "icons": [
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+}
