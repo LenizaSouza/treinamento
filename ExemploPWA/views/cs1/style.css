@@ -1,5 +1,26 @@
-@font-face {
-    font-family: alexbrush;
-    src: url('AlexBrush-Regular.ttf');
+body{
+    background-color: black;
+    margin: 0;
 }
-    
+.box{
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border: 3px solid yellow;
+    padding: 10px;
+    margin: 10px 0 5px 10px; 
+}
+.vermelho{
+    background-color: red;
+    margin-top: 0px;
+  
+}
+.azul{
+    background-color: blue;
+    margin-bottom: 50px;
+   
+}
+.verde{
+    background-color: green;
+    margin-left: 0;
+}
